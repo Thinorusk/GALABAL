@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galabal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="galabalForm">
+            <label for="code">Voer de code in (420):</label>
+            <input type="text" id="code" name="code" required>
+            <br>
+            <label for="antwoord">Wil je met mij dansen op het galabal? (ja/nee):</label>
+            <input type="text" id="antwoord" name="antwoord" required>
+            <br>
+            <button type="button" onclick="submitForm()">Verzenden</button>
+            <p id="response"></p>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            var code = document.getElementById("code").value;
+            var antwoord = document.getElementById("antwoord").value.toLowerCase();
+
+            if (code === "420") {
+                if (antwoord === "ja") {
+                    document.getElementById("response").innerHTML = "Kom trouwen bby girl!";
+                } else if (antwoord === "nee") {
+                    document.getElementById("response").innerHTML = "sallope fils de pute!";
+                } else {
+                    document.getElementById("response").innerHTML = "Ongeldig antwoord.";
+                }
+            } else {
+                document.getElementById("response").innerHTML = "Ongeldige code.";
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galabal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="galabalForm">
+            <label for="code">Voer de code in (420):</label>
+            <input type="text" id="code" name="code" required>
+            <br>
+            <label for="antwoord">Wil je met mij dansen op het galabal? (ja/nee):</label>
+            <input type="text" id="antwoord" name="antwoord" required>
+            <br>
+            <button type="button" onclick="submitForm()">Verzenden</button>
+            <p id="response"></p>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            var code = document.getElementById("code").value;
+            var antwoord = document.getElementById("antwoord").value.toLowerCase();
+
+            if (code === "420") {
+                if (antwoord === "ja") {
+                    document.getElementById("response").innerHTML = "Kom trouwen bby girl!";
+                } else if (antwoord === "nee") {
+                    document.getElementById("response").innerHTML = "sallope fils de pute!";
+                } else {
+                    document.getElementById("response").innerHTML = "Ongeldig antwoord.";
+                }
+            } else {
+                document.getElementById("response").innerHTML = "Ongeldige code.";
+            }
+        }
+    </script>
+</body>
+</html>
